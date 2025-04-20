@@ -1,0 +1,7 @@
+*.env
+.env.local
+
+/.vscode
+/node_modules
+/.next
+./dist
