@@ -1,6 +1,10 @@
 import mongoose, {Schema} from 'mongoose';
 import jwt from "jsonwebtoken";
+<<<<<<< HEAD
 import bcrypt from "bcrypt";
+=======
+import bcrypt from "bcryptjs";
+>>>>>>> d3976b3b5b9047cd3e0b8c4de089ec68033ed0e5
 
 
 const userSchema = new Schema(
@@ -58,7 +62,11 @@ userSchema.pre("save", async function (next) {
   if(!this.isModified("password")) return next();
 
 
+<<<<<<< HEAD
   this.password = await bcrypt.hash(this.password, 10)
+=======
+  this.password = bcrypt.hashSync(this.password, 10)
+>>>>>>> d3976b3b5b9047cd3e0b8c4de089ec68033ed0e5
   next()
 })
 
@@ -95,6 +103,10 @@ userSchema.methods.generateRefreshToken = function() {
  )
 }
 
+<<<<<<< HEAD
 export const User = mongoose.model("User", userSchema)  
 
 
+=======
+export const User = mongoose.model("User", userSchema)  
+>>>>>>> d3976b3b5b9047cd3e0b8c4de089ec68033ed0e5

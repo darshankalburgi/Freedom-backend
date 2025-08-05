@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
+<<<<<<< HEAD
     "cloudinary": "^2.7.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
@@ -29,5 +30,11 @@
     "mongoose": "^8.13.2",
     "mongoose-aggregate-paginate-v2": "^1.1.4",
     "multer": "^2.0.2"
+=======
+    "i": "^0.3.7",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose-aggregate-paginate-v2": "^1.1.4",
+    "npm": "^11.4.2"
+>>>>>>> d3976b3b5b9047cd3e0b8c4de089ec68033ed0e5
   }
 }
